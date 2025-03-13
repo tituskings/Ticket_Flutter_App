@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ticket_app/bottom_nav_bar.dart';
+import 'package:ticket_app/screens/home/all_tickets.dart';
 
 void main() {
   runApp(MyApp());
@@ -17,7 +18,11 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: BottomNavBar(),
+      // home: BottomNavBar(),
+      routes: {
+        "/": (context) => BottomNavBar(),
+        "/all_tickets": (context) => AllTicketsScreen()
+      },
     );
   }
 }
