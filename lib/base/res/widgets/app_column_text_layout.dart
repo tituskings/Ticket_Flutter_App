@@ -12,7 +12,7 @@ class AppColumnTextLayout extends StatelessWidget {
       required this.topText,
       required this.BottomText,
       required this.alignment,
-      this.isColor = null});
+      this.isColor});
 
   @override
   Widget build(BuildContext context) {

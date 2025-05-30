@@ -15,7 +15,7 @@ class TicketView extends StatelessWidget {
       {super.key,
       required this.ticket,
       this.wholeScreen = false,
-      this.isColor = null});
+      this.isColor});
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +23,7 @@ class TicketView extends StatelessWidget {
 
     return SizedBox(
       width: size.width * 0.85,
-      height: 189,
+      height: 177,
       child: Container(
         margin: EdgeInsets.only(right: wholeScreen == true ? 0 : 16),
         child: Column(

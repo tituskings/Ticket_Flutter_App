@@ -5,10 +5,7 @@ class AppLayoutBuilderWidget extends StatelessWidget {
   final double width;
   final bool? isColor;
   const AppLayoutBuilderWidget(
-      {super.key,
-      required this.randomDivider,
-      this.width = 3,
-      this.isColor = null});
+      {super.key, required this.randomDivider, this.width = 3, this.isColor});
 
   @override
   Widget build(BuildContext context) {
